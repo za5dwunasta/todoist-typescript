@@ -42,7 +42,7 @@
   color: #333333;
 
   &__item {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #dedede;
     // height: 2rem;
     padding: 0.75rem 0;
     display: flex;
@@ -74,7 +74,7 @@
   height: 0.5rem;
   margin-right: 0.5rem;
   cursor: pointer;
-  border: 2px solid currentColor;
+  border: 2px solid #333;
   border-radius: 50%;
   transform: scale(1);
   transition: transform 300ms ease-in-out;
@@ -84,8 +84,8 @@
 
 
 [type="checkbox"]:checked+label .custom-checkbox {
-  background: black;
-  border-color: black;
+  background: #333;
+  border-color: #333;
   box-shadow: inset 0 0 0px 2px white;
 }
 
@@ -99,7 +99,7 @@
 }
 
 
-.new {
+.add-task__input {
   background: transparent;
   border: 0;
   color: inherit;
@@ -109,23 +109,24 @@
   padding: 0.25em;
   transition: border-bottom 150ms ease-in;
   order: 2;
+  width: 70%
 }
 
-.new::placeholder {
+.add-task__input::placeholder {
   opacity: 0.4;
 }
 
 
 
-.new:focus::placeholder {
+.add-task__input:focus::placeholder {
   opacity: 0.15;
 }
 
-.new.list {
+.add-task__input.list {
   font-size: 1.1rem;
 }
 
-.new.task {
+.add-task__input.task {
   margin-bottom: 0;
 }
 
